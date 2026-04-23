@@ -80,14 +80,17 @@ MultiTimeframeAnalysis: An advanced spatial layout that executes seamless camera
 #5. Deployment & Headless Integration
 This engine is built to run locally for development, or to be deployed headlessly via Remotion Lambda or your preferred serverless architecture for production.
 Local Developer Quickstart:
+```bash
    1. Authenticate and install enterprise dependencies
-  npm ci
+   npm ci
 
    2. Launch the Remotion Studio for real-time payload testing
   npm run dev
 
    3. Execute a programmatic local render
   npx remotion render src/index.ts Main out/video.mp4 --props=./src/payloads/trade_01.json
+
+  ```
 
 
 
