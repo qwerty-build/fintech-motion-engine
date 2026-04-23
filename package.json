@@ -1,0 +1,40 @@
+{
+  "name": "trading-pattern-video-engine",
+  "version": "1.0.0",
+  "description": "Fully local pipeline: scan chart patterns → render MP4 shorts via Remotion",
+  "private": true,
+  "scripts": {
+    "dev": "npx remotion studio",
+    "build": "npx remotion render",
+    "scan": "ts-node pipeline/scan.ts",
+    "render": "ts-node pipeline/render.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.438",
+    "@remotion/cli": "4.0.438",
+    "@remotion/layout-utils": "^4.0.438",
+    "@remotion/motion-blur": "4.0.438",
+    "@remotion/paths": "^4.0.438",
+    "@remotion/renderer": "4.0.438",
+    "d3-array": "^3.2.4",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^3.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remotion": "4.0.438",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/d3-array": "^3.2.2",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-shape": "^3.1.8",
+    "@types/node": "20.11.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
