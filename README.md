@@ -17,14 +17,15 @@ The Fintech Motion Engine replaces human motion designers with a programmatic, h
 ## 2. Core Architecture
 
 The system is designed with a strict decoupling of the data layer from the rendering layer, ensuring high predictability and zero visual regressions.
-**TemplateRegistry.ts (The Routing Layer)**
+- **TemplateRegistry.ts (The Routing Layer)**
 A dynamic factory pattern that parses incoming payloads and routes them to the appropriate rendering tree. It ensures that content scaling requires zero core architectural changes—simply register a new React component.
-**ChartProvider (The Math Engine)**
+- **ChartProvider (The Math Engine)**
 The proprietary core of the system. It abstracts away the extreme complexity of translating raw financial data (OHLCV, timestamps) into pixel-perfect SVG coordinate space. It handles:
-- Complex D3 scale inversions (scaleTime, scaleLinear).
-- Auto-calculating dynamic y-axis padding based on localized volatility.
-- Zero-CSS, pure SVG path generation for maximum rendering performance.
-**schema.ts (The Data Contract)**
+ - Complex D3 scale inversions (scaleTime, scaleLinear).
+ - Auto-calculating dynamic y-axis padding based on localized volatility.
+ - Zero-CSS, pure SVG path generation for maximum rendering performance.
+
+- **schema.ts (The Data Contract)**
 All incoming data is strictly typed. If a payload is malformed or an indicator array length mismatches the price data, the engine fails fast—preventing wasted compute cycles.
 
 ## 3. The Enterprise Data Contract
