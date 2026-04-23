@@ -5,7 +5,7 @@ Enterprise Rendering Infrastructure for Financial Media
 
 A deterministic, React-based rendering pipeline that transforms strictly-typed financial JSON data into broadcast-quality, frame-accurate motion graphics. Built for prop firms, financial institutions, and high-volume marketing agencies.
 
-#1. Executive Summary & Business Value
+1. Executive Summary & Business Value
 
 Traditional financial video production relies on manual timeline sequencing in Adobe After Effects—a highly inefficient, unscalable, and error-prone workflow.
 The Fintech Motion Engine replaces human motion designers with a programmatic, headless rendering architecture. By licensing this codebase, your organization acquires a proprietary infrastructure that:
@@ -13,7 +13,7 @@ Reduces Production Margins: Lowers the cost of a complex trade breakdown from ho
 Guarantees Precision: Replaces subjective editing with mathematically precise D3.js coordinate mapping.
 Enables Infinite Scale: Connect directly to TradingView webhooks, proprietary algorithmic outputs, or CRM data to auto-generate video content at scale via CI/CD or serverless pipelines.
 
-#2. Core Architecture
+2. Core Architecture
 
 The system is designed with a strict decoupling of the data layer from the rendering layer, ensuring high predictability and zero visual regressions.
 TemplateRegistry.ts (The Routing Layer)
@@ -26,7 +26,7 @@ Zero-CSS, pure SVG path generation for maximum rendering performance.
 schema.ts (The Data Contract)
 All incoming data is strictly typed. If a payload is malformed or an indicator array length mismatches the price data, the engine fails fast—preventing wasted compute cycles.
 
-#3. The Enterprise Data Contract
+3. The Enterprise Data Contract
 
 Video generation is executed by passing a standardized JSON payload to the rendering engine. You dictate the narrative; the engine handles the sequencing, easing, and coordinate mapping.
 ```typescript
@@ -70,14 +70,14 @@ export const sessionPayload: EnterpriseVideoPayload = {
 
 
 
-#4. Built-In Institutional Templates
+4. Built-In Institutional Templates
 The repository includes four heavily optimized, mathematically rigorous templates designed for distinct analytical narratives:
 ViralTradeBreakdown: High-velocity sequencing focused on specific trade execution, risk-to-reward mapping, and rapid consolidation-to-breakout visualizations.
 ChartPatternBreakdown: Deterministic bezier-curve mapping that dynamically draws classical technical patterns (Head & Shoulders, Wedges) directly onto live price action.
 IndicatorDivergence: Complex dual-pane rendering that frame-syncs price action with oscillator arrays (RSI, MACD) to programmatically highlight hidden market divergences.
 MultiTimeframeAnalysis: An advanced spatial layout that executes seamless camera interpolations between macro (Daily) and micro (15m) chart views without dropping frames.
 
-#5. Deployment & Headless Integration
+5. Deployment & Headless Integration
 This engine is built to run locally for development, or to be deployed headlessly via Remotion Lambda or your preferred serverless architecture for production.
 Local Developer Quickstart:
 ```bash
@@ -94,12 +94,12 @@ Local Developer Quickstart:
 
 
 
-#6. White-Label & Customization API
+6. White-Label & Customization API
 The engine is engineered for multi-tenant environments. A single deployment can serve multiple clients, agencies, or internal brands by dynamically injecting brand guidelines via the payload configuration.
 Asset Injection: Pass remote URLs for watermarks and logos directly into the JSON.
 Typography: Full support for custom .ttf injection for exact brand matching.
 Color Space: Complete programmatic control over candlestick palettes, indicator strokes, and background gradients.
-#7. License & Support
+7. License & Support
 This repository is provided under a Commercial Enterprise License.
 The licensee is granted a non-exclusive right to modify the codebase and utilize the generated video assets for commercial purposes.
 Resale, sub-licensing, or redistribution of the raw source code or engine architecture is strictly prohibited.
