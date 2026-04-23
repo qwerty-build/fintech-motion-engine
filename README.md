@@ -79,7 +79,8 @@ MultiTimeframeAnalysis: An advanced spatial layout that executes seamless camera
 
 5. Deployment & Headless Integration
 This engine is built to run locally for development, or to be deployed headlessly via Remotion Lambda or your preferred serverless architecture for production.
-Local Developer Quickstart:
+```markdown
+**Local Developer Quickstart:**
 ```bash
    1. Authenticate and install enterprise dependencies
    npm ci
