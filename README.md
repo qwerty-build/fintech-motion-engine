@@ -5,7 +5,7 @@ Enterprise Rendering Infrastructure for Financial Media
 
 A deterministic, React-based rendering pipeline that transforms strictly-typed financial JSON data into broadcast-quality, frame-accurate motion graphics. Built for prop firms, financial institutions, and high-volume marketing agencies.
 
-1. Executive Summary & Business Value
+###1. Executive Summary & Business Value
 
 Traditional financial video production relies on manual timeline sequencing in Adobe After Effects—a highly inefficient, unscalable, and error-prone workflow.
 The Fintech Motion Engine replaces human motion designers with a programmatic, headless rendering architecture. By licensing this codebase, your organization acquires a proprietary infrastructure that:
